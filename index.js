@@ -3,7 +3,7 @@ const fs = require('fs/promises')
 
 const script = async() => {
     const browser = await puppeteer.launch({
-        headless: false
+        headless: true
     })
     const page = await browser.newPage()
     await page.goto('https://www.instagram.com/p/CTaD6wXsHSn/?__a=1', {waitUntil: "networkidle2"})
