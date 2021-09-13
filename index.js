@@ -17,6 +17,7 @@ const script = async() => {
     let image = res.graphql.shortcode_media.display_url
     await fs.writeFile("image.txt", image)
 
+    await browser.close()
 
 }
 
